@@ -4,6 +4,11 @@ Following the guide here: https://www.blog.plint-sites.nl/progressive-web-app-us
 
 Send a simple notification to user when they enable notifications by clicking a button.
 
+Demo:
+<br>
+<img src="./demo.gif" width="480" style="border: 1px solid #ddd; border-radius: 8px">
+
+
 ## Project setup
 ```
 yarn install
