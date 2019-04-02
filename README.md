@@ -25,19 +25,20 @@ yarn run build
 ```
 
 ### Compiles and hot-reloads for production
+To test service worker, you have to run the production package. Use the following command to build production package, and serve it off http-server.
 ```
 yarn run serve-build
 ```
 
-### Run your tests
+## Continuous Delivery
+
+Using Docker
 ```
-yarn run test
+docker build -t dockerize-vue-pwa .
+docker run -it -p 8080:8080 --rm --name dockerize-vue-pwa-1 dockerize-vue-pwa
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+Using Netlify
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa7e2016-d031-4d81-8c68-a4d912269502/deploy-status)](https://app.netlify.com/sites/experiments-pulkit-01/deploys)
+
